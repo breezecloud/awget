@@ -291,7 +291,7 @@ if __name__ == "__main__":
     parser.add_argument('-o','--output', type=str,help="将文件保存为OUTPUT")
     parser.add_argument('-d','--directory' , type=str, help="将文件保存到目录 DIRECTORY/")
     parser.add_argument('-u','--user' , type=str, help="http认证用户名")
-    parser.add_argument('-p','--password' , type=str, help="httr认证密码/")
+    parser.add_argument('-p','--password' , type=str, help="http认证密码/")
     parser.add_argument('-s','--skip' , action='store_true', help="跳过文件如果目标目录已经存在该文件")
     parser.add_argument('-v','--version', action='version',version=__version__,help="版本" ) 
     parser.add_argument('url', help="URL" ) 
