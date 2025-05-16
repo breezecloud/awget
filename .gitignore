@@ -1,0 +1,13 @@
+#temporary files
+*~
+.cache/
+
+#private configuration
+/.vscode/
+
+#private files
+awget.log
+ignore.txt
+.pypirc
+__pycache__/
+dist/

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+[project]
+name = "awget"
+version = "0.0.9"
+authors = [
+  { name="luping", email="luping.sh@chinatelecom.cn" },
+]
+description = "Pure python download utility can batch download of files listed based on a certain URL"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = { file = "LICENSE" }
+dependencies = [
+    "pywin32 >=306;os_name == 'nt'",  # 仅在 Windows 上安装
+    "requests >=2.32.3", # 通用依赖
+    "pyquery >=2.0.1", # 通用依赖
+]
+
+[project.urls]
+Homepage = "https://github.com/breezecloud/awget"
+Issues = "https://github.com/breezecloud/awget/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/awget"]
